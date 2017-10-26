@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="house" location="178,725" size="280,420">
+    <action name="list" location="65,57" size="150,41">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="list.jsp" />
+      </result>
+    </action>
+    <action name="detail" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="detail.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="list.jsp" path="/house/list.jsp" location="20,745" size="150,55" />
+  <webResource name="search.jsp" path="/house/search.jsp" location="9,920" size="150,55" />
+  <webResource name="detail.jsp" path="/house/detail.jsp" location="502,1025" size="150,55" />
+  <webResource name="manage.jsp" path="/house/admin/manage.jsp" location="1138,185" size="150,55" />
+  <webResource name="delete_success.jsp" path="/house/admin/delete_success.jsp" location="1154,360" size="150,55" />
+  <webResource name="add_success.jsp" path="/house/admin/add_success.jsp" location="76,360" size="150,55" />
+  <webResource name="add.jsp" path="/house/admin/add.jsp" location="625,535" size="150,55" />
+  <webResource name="update_detail.jsp" path="/house/admin/update_detail.jsp" location="598,10" size="150,55" />
+  <webResource name="update_success.jsp" path="/house/admin/update_success.jsp" location="32,185" size="150,55" />
+</Struts2Diagram>
+

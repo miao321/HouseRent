@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+	"http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	
+	<package name="house" namespace="/house" extends="struts-default">
+		<global-results>
+	         <result name="exception" >/common/exception.jsp</result>   
+		</global-results>
+		<global-exception-mappings>
+			<exception-mapping result="exception" exception="cn.tedu.exception.ServiceException"></exception-mapping>
+		</global-exception-mappings>
+	   <action name="list" class="cn.tedu.web.action.HouseAction" method="list">
+	         <result name="success" >/house/list.jsp</result>                        
+	   </action>
+	   <action name="detail" class="cn.tedu.web.action.HouseAction" method="detail">                     
+	         <result name="success" >/house/detail.jsp</result>                        
+	   </action>
+	   <!-- 
+	   <action name="search" class="cn.tedu.web.action.HouseAction" method="search">
+	         <result name="success" >/house/search.jsp</result>                        
+	   </action>
+	   
+	   -->
+	</package>
+	<!-- 
+	<package name="house/admin" namespace="/house/admin" extends="struts-default">
+	   <action name="manage" class="cn.tedu.web.action.HouseAction" method="manage">
+	         <result name="success" >/house/admin/manage.jsp</result>                        
+	   </action>
+	   <action name="delete" class="cn.tedu.web.action.HouseAction" method="delete">
+	         <result name="success" >/house/admin/delete_success.jsp</result>                        
+	   </action>
+	   <action name="add" class="cn.tedu.web.action.HouseAction" method="add">
+	         <result name="success" >/house/admin/add_success.jsp</result>                        
+	         <result name="failure" >/house/admin/add.jsp</result>                        
+	   </action>
+	   
+	   <action name="updateDetail" class="cn.tedu.web.action.HouseAction" method="updateDetail">
+	         <result name="success" >/house/admin/update_detail.jsp</result>                        
+	   </action>
+	   
+	   <action name="update" class="cn.tedu.web.action.HouseAction" method="update">
+	         <result name="success" >/house/admin/update_success.jsp</result>                        
+	         <result name="failure" >/house/admin/update_detail.jsp</result>                        
+	   </action>
+	   
+	</package>	 -->
+
+</struts>

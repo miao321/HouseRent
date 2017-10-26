@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Struts2Diagram version="2.0">
+  <package name="user" location="10,165" size="280,210">
+    <action name="register" location="0,0" size="0,0">
+      <result name="success">
+        <resourceEdge source="success" routing="0" target="register_success.jsp" />
+      </result>
+      <result name="failure">
+        <resourceEdge source="failure" routing="0" target="register.jsp" />
+      </result>
+    </action>
+  </package>
+  <webResource name="register_success.jsp" path="/register_success.jsp" location="78,430" size="150,55" />
+  <webResource name="register.jsp" path="/register.jsp" location="100,10" size="150,55" />
+  <webResource name="login.jsp" path="/login.jsp" location="345,220" size="150,55" />
+</Struts2Diagram>
+

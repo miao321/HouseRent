@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	
+	<!-- 指定需要struts2处理请求后缀，该属性默认值是action,即所有请求*.action由struts2处理。如用户需要指定多个后缀，则后缀之间用英文逗号隔开 -->
+	<constant name="struts.action.extension" value="do,action,,"></constant>
+	<!-- 设置post中文乱码 -->
+	<constant name="struts.i18n.encoding" value="UTF-8"/>
+	<include file="struts-users.xml"></include>
+	<include file="struts-house.xml"></include>
+</struts>

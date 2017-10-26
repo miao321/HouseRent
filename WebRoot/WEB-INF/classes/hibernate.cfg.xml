@@ -1,0 +1,33 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/houserent</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">123456</property>
+		<!-- 设置方言 -->
+		<property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+		<!-- 显示sql语句 -->
+		<property name="show_sql">true</property>
+		<!-- 格式化sql语句 -->
+		<property name="format_sql">true</property>
+		<!-- 开启二级缓存
+		<property name="cache.use_second_level_cache">true</property>
+		<property name="cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
+		 -->
+		<!-- 开启查询缓存 
+		<property name="cache.use_query_cache">true</property>
+		-->
+		
+		<!-- 挂上需要的hbm.xml文件 -->
+		<mapping resource="cn/tedu/entity/District.hbm.xml"/>
+		<mapping resource="cn/tedu/entity/Type.hbm.xml"/>
+		<mapping resource="cn/tedu/entity/House.hbm.xml"/>
+		<mapping resource="cn/tedu/entity/User.hbm.xml"/>
+		<mapping resource="cn/tedu/entity/Street.hbm.xml"/>
+		
+	</session-factory>
+</hibernate-configuration>
